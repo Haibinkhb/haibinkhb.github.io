@@ -1,0 +1,194 @@
+{
+    "ret": true,
+    "allTags": ["webpack","Vue","Promise","basis","features","performance","summary"],
+    "allCategories":["JavaScript","ES6","webpack"],
+    "data":[
+        {
+            "_id": "001",
+            "id": "prototype",
+            "title": "JavaScript 原型和原型链",
+            "desc":"每个实例对象（ object ）都有一个私有属性（称之为 __proto__ ）指向它的构造函数的原型对象（prototype ）。该原型对象也有一个自己的原型对象( __proto__ ) ，层层向上直到一个对象的原型对象为 null。根据定义，null 没有原型，并作为这个原型链中的最后一个环节。",
+            "tags": [
+                "basis"
+            ],
+            "filename": "prototype.md",
+            "wordcount": "588",
+            "date": "2019-11-16",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "002",
+            "id": "scope",
+            "title": "JavaScript 作用域",
+            "tags": [
+                "basis"
+            ],
+            "desc":"作用域是指源代码定义变量的区域。作用域规定了如何查找变量，也就是确定当前执行代码对变量的访问权限。",
+            "filename": "scope.md",
+            "wordcount": "2340",
+            "date": "2019-11-23",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "003",
+            "id": "this",
+            "title": "this 和闭包",
+            "tags": [
+                "basis"
+            ],
+            "desc":"在绝大多数情况下，函数的调用方式决定了 this 的值。this 不能在执行期间被赋值，并且在每次函数被调用时 this 的值也可能会不同。ES5引入了bind方法来设置函数的this值，而不用考虑函数如何被调用的，ES2015 引入了支持 this 词法解析的箭头函数（它在闭合的执行环境内设置this的值）。",
+            "filename": "this.md",
+            "wordcount": "1900",
+            "date": "2019-11-30",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "004",
+            "id": "call",
+            "title": "模拟实现 call 和 apply",
+            "tags": [
+                "basis",
+                "features"
+            ],
+            "filename": "call&apply.md",
+            "desc":"call() 方法使用一个指定的 this 值和单独给出的一个或多个参数来调用一个函数。\napply() 方法调用一个具有给定this值的函数，以及作为一个数组（或类似数组对象）提供的参数。",
+            "wordcount": "667",
+            "date": "2019-12-2",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "005",
+            "id": "bind",
+            "title": "模拟实现 bind 和 new",
+            "desc":"bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。\nnew 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象的实例。",
+            "tags": [
+                "basis",
+                "features"
+            ],
+            "filename": "bind.md",
+            "wordcount": "961",
+            "date": "2019-12-4",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "006",
+            "id": "object",
+            "title": "创建对象和继承的多种方式及优缺点",
+            "tags": [
+                "basis",
+                "features"
+            ],
+            "desc":"在使用原型继承编写复杂代码之前，理解原型继承模型是至关重要的。此外，请注意代码中原型链的长度，并在必要时将其分解，以避免可能的性能问题。此外，原生原型不应该被扩展，除非它是为了与新的 JavaScript 特性兼容。",
+            "filename": "object.md",
+            "wordcount": "1063",
+            "date": "2019-12-6",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "007",
+            "id": "debounce",
+            "title": "防抖和节流",
+            "tags": [
+                "features",
+                "performance"
+            ],
+            "desc":"防抖：对于连续触发的事件，只在事件停止触发的 n 秒后再执行事件。也就是说在一个事件触发的 n 秒内又触发了这个事件，那就以新的事件的时间为准，n 秒后才执行，就是要等你触发完事件的 n 秒内不再触发事件，才执行。\n节流：节流就是对于持续触发的事件，每隔一段事件，只执行一次事件。",
+            "filename": "debounce.md",
+            "wordcount": "1118",
+            "date": "2019-12-12",
+            "categories": [
+                "JavaScript"
+            ]
+        },
+        {
+            "_id": "008",
+            "id": "typeof",
+            "title": "类型判断",
+            "tags": [
+                "basis",
+                "features"
+            ],
+            "desc":"typeof 是一元操作符，放在其单个操作数的前面，操作数可以是任意类型。返回值为表示操作数类型的一个字符串。",
+            "filename": "typeof.md",
+            "wordcount": "756",
+            "date": "2019-12-16",
+            "categories": [
+                "JavaScript"
+            ]
+        },{
+            "_id": "009",
+            "id": "promise",
+            "title": "Promise的基本使用",
+            "tags": [
+                "Promise"
+            ],
+            "desc": "Promise 是异步编程的一种解决方案。所谓Promise，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise 是一个对象，从它可以获取异步操作的消息。Promise 提供统一的 API，各种异步操作都可以用同样的方法进行处理。",
+            "filename": "promise.md",
+            "wordcount": "1258",
+            "date": "2020-1-1",
+            "categories": [
+                "ES6"
+            ]
+        },{
+            "_id": "010",
+            "id": "simulationPromise",
+            "title": "Promise 的简单模拟实现",
+            "tags": [
+                "Promise",
+                "basis"
+            ],
+            "desc": "Promise 接收一个执行器（executor）函数，Promise 构造函数执行时立即调用该函数,该函数接受两个参数，分别是 resolve 函数和 reject 函数",
+            "filename": "simulationPromise.md",
+            "wordcount": "1658",
+            "date": "2020-1-2",
+            "categories": [
+                "ES6"
+            ]
+        },
+        {
+            "_id": "011",
+            "id": "mvvm",
+            "title": "简单模拟实现 Vue 2.x 双向绑定",
+            "tags": [
+                "Vue",
+                "basis"
+            ],
+            "desc": "当你把一个普通的 JavaScript 对象传入 Vue 实例作为 data 选项，Vue 将遍历此对象所有的属性，并使用 Object.defineProperty 把这些属性全部转为 getter/setter。",
+            "filename": "mvvm.md",
+            "wordcount": "1411",
+            "date": "2020-1-7",
+            "categories": [
+                "ES6"
+            ]
+        },
+        {
+            "_id": "012",
+            "id": "event",
+            "title": "简单模拟实现 EventBus",
+            "tags": [
+                "Vue",
+                "basis"
+            ],
+            "desc": "许多现代JavaScript框架和库的核心概念是能够将数据和UI封装在模块化、可重用的组件中。这对于开发人员可以在开发整个应用程序时避免使用编写大量重复的代码。虽然这样做非常有用，但也涉及到组件之间的数据通讯。在Vue中同样有这样的概念存在。通过前面一段时间的学习，Vue组件数据通讯常常会有父子组件，兄弟组件之间的数据通讯。也就是说在Vue中组件通讯有一定的原则。",
+            "filename": "event.md",
+            "wordcount": "1171",
+            "date": "2020-1-21",
+            "categories": [
+                "ES6",
+                "JavaScript"
+            ]
+        }
+    ]
+}
